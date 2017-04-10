@@ -47,6 +47,9 @@
           <h3>Tierra producciones 2017</h3>
           <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
         </div>
+        <div class="row center">
+          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange lighten-1">Comenzar</a>
+        </div>
       </li>
       <li>
         <%= image_tag "fondoaceitunas.jpg"%>
@@ -212,7 +215,11 @@
       </div>
     </div>
   </div>
-<div class="container">
+  <script>
+    var options = [ {selector: '#app', offset: 50, callback: function(el) { Materialize.toast("Bienvenido a Tierra", 1500 ); } }, {selector: '#app', offset: 205, callback: function(el) { Materialize.toast("Continue bajando por la web", 1500 ); } }, {selector: '#app', offset: 400, callback: function(el) { Materialize.showStaggeredList($(el)); } }, {selector: '#image-test', offset: 500, callback: function(el) { Materialize.fadeInImage($(el)); } } ]; Materialize.scrollFire(options); 
+
+</script>
+<div class="container" id="app">
   <div class="section">
     <h5>Etapas de un servicio integral</h5>
      <ul class="collapsible" data-collapsible="accordion">
